@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_button"> <!-- Fundo degradê -->
+
+  <!-- Caixa branca -->
+  <LinearLayout
+      android:layout_width="320dp"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:background="@drawable/white_box"
+      android:elevation="6dp"
+      android:orientation="vertical"
+      android:padding="20dp">
+
+    <!-- Título LOGIN -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="#7F7FFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- RA/RG -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/gradient_edittextlogin"
+        android:hint="Digite seu RA/RG"
+        android:padding="12dp"
+        android:textColor="#000000" />
+
+    <!-- Senha -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/gradient_edittextlogin"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#000000" />
+
+    <!-- Botão ENTRAR -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/gradient_buttonlogin"
+        android:text="ENTRAR"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Imagem abaixo do botão -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/amigos"
+        android:contentDescription="Imagem de amigos abraçados"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+  </LinearLayout>
+
+</RelativeLayout>

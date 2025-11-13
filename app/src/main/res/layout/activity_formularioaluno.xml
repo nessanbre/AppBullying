@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_gradiente_formularioaluno">
+
+    <!-- Nome do usuário anônimo -->
+    <TextView
+        android:id="@+id/tvAnonimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anônimo07"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp" />
+
+    <!-- Data e hora -->
+    <TextView
+        android:id="@+id/tvDataHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qui, 11 de Set, 08:17 (Agora)"
+        android:textSize="14sp"
+        android:textColor="#E0E0E0"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Caixa de texto da denúncia -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição da Denúncia:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:id="@+id/etDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="top|start"
+        android:hint="Descreva aqui o que aconteceu..."
+        android:background="@drawable/bg_caixatexto_formularioaluno"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="25dp"
+        android:inputType="textMultiLine" />
+
+    <!-- Pergunta -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deseja deixar anonimamente ou seu nome de usuário?"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Opções de anonimato -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="25dp">
+
+        <CheckBox
+            android:id="@+id/checkAnonimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Como Anônimo"
+            android:textColor="#FFFFFF"
+            android:checked="true" />
+
+        <CheckBox
+            android:id="@+id/checkComNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meu nome de usuário"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Botão de enviar -->
+    <ImageButton
+        android:id="@+id/btnEnviar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_enviar_formularioaluno"
+        android:src="@drawable/icon_send"
+        android:tint="#FFFFFF"
+        android:contentDescription="Enviar"
+        android:scaleType="centerInside"
+        android:padding="10dp" />
+
+
+</LinearLayout>
