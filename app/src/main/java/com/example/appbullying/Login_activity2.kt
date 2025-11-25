@@ -1,4 +1,4 @@
-package com.seuprojeto
+package com.example.appbullying
 
 import android.content.Context
 import android.content.Intent
