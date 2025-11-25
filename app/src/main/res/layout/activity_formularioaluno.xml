@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -28,7 +30,7 @@
         android:textColor="#E0E0E0"
         android:layout_marginBottom="20dp" />
 
-    <!-- Caixa de texto da denúncia -->
+    <!-- Título da descrição -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,6 +40,7 @@
         android:textSize="16sp"
         android:layout_marginBottom="6dp" />
 
+    <!-- Caixa de texto -->
     <EditText
         android:id="@+id/etDescricao"
         android:layout_width="match_parent"
@@ -74,14 +77,21 @@
             android:layout_height="wrap_content"
             android:text="Como Anônimo"
             android:textColor="#FFFFFF"
-            android:checked="true" />
+            android:checked="true"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:padding="8dp" />
 
         <CheckBox
             android:id="@+id/checkComNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Meu nome de usuário"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:padding="8dp"
+            android:layout_marginStart="20dp" />
     </LinearLayout>
 
     <!-- Botão de enviar -->
@@ -91,10 +101,9 @@
         android:layout_height="60dp"
         android:background="@drawable/btn_enviar_formularioaluno"
         android:src="@drawable/icon_send"
-        android:tint="#FFFFFF"
+        app:tint="#FFFFFF"
         android:contentDescription="Enviar"
         android:scaleType="centerInside"
         android:padding="10dp" />
-
 
 </LinearLayout>

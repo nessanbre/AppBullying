@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import com.example.appbullying.R
 
 class CadastroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,7 @@ class CadastroActivity : AppCompatActivity() {
         val editRa = findViewById<EditText>(R.id.editRARG)
         val editSenha = findViewById<EditText>(R.id.editSENHA)
         val editConfirmar = findViewById<EditText>(R.id.editCONFIRMARSENHA)
-        val btnEntrar = findViewById<Button>(R.id.btnENTRAR)
+        val btnEntrar = findViewById<Button>(R.id.editENTRAR)
 
         btnEntrar.setOnClickListener {
             val dia = editDia.text.toString()
